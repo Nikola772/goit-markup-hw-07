@@ -1,0 +1,68 @@
+.nav__link.portfolio {
+    position: relative;
+  }
+
+  .nav__link.portfolio::after {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: $webstydioLink;
+  }
+
+  .filter__card__portfolio {
+    background-color:  $fonColor;
+  }
+
+  .btn {
+    padding-top: 94px;
+  }
+
+  .list.btn__filter {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .list.btn-filter > .list__filter__item + .list__filter__item {
+    margin-left: 8px;
+  }
+
+  .list__filter__item {   
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);      
+    letter-spacing: 0.03em;
+    color: $titleText;  
+  }
+
+  .item__filter.padding__btn {     
+    color: $titleText;
+    border: none;  
+  }
+
+  .padding__btn {
+    padding: 6px 22px;
+    border: none;
+    background: $bgFonColor;
+    border-radius: 4px; 
+    
+    &:hover,
+    &:focus {
+        background: #2196F3; 
+
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: $fonColor;
+}
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
